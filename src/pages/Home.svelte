@@ -1,6 +1,7 @@
 <script>
     import HeroSection from "../components/HeroSection.svelte";
     import Divider from "../components/Divider.svelte";
+    import Project from "../components/Project.svelte";
 </script>
 
 <HeroSection />
@@ -26,13 +27,42 @@
 
 </section>
 
+<section class="container">
+    <h2>Portfolio</h2>
+
+    <Project
+            projectName="NEWGROUNDAI"
+            skillsUsed="HTML, CSS, JavaScript, Three.js"
+            previewImage="./src/assets/preview-image1.png"
+    />
+    <Project projectName="Project 2" skillsUsed="React, Redux, Node.js" />
+</section>
+
+<section class="container">
+    <h2>Skills</h2>
+</section>
+
+<section class="cv">
+    <h2>CV</h2>
+    <div class="centered">
+        <a href="./src/assets/SandraKrevovaCV.pdf" download>
+            <img src="./src/assets/downloading.png" alt="download-icon">
+            <span>Download my CV</span>
+        </a>
+    </div>
+</section>
+
+
 
 <style>
+section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
 .about-me {
     background-color: var(--bg-secondary);
     color: var(--cl-button);
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
 }
 
 .description {
@@ -44,8 +74,31 @@
     font-size: 1.5em;
 }
 
-.about-me h2 {
+h2 {
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 1rem;
 }
+
+.cv {
+    background-color: var(--cl-button);
+    color: var(--bg-primary);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Optional: remove underline */
+}
+
+.centered a img {
+    margin-right: 5px; /* Optional: adjust spacing between image and text */
+}
+
 </style>
