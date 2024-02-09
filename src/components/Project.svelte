@@ -1,15 +1,20 @@
+<!-- Project.svelte -->
 <script>
     export let projectName;
+    export let date;
     export let skillsUsed;
     export let previewImage;
     export let projectLink;
+    export let type;
 </script>
 
 <div class="project">
-    <a href="{projectLink}" target="_blank">
+    <a href="{projectLink}">
         <img src="{previewImage}" alt="{projectName}">
         <h3>{projectName}</h3>
-        <p>{skillsUsed}</p>
+        <p>Type: {type}</p>
+        <p>Date: {date}</p>
+        <p>Skills Used: {skillsUsed}</p>
     </a>
 </div>
 
@@ -22,12 +27,8 @@
     }
 
     .project img {
-        height: auto;
+        width: 100%;
+        height: 12rem;
         margin-bottom: 10px; /* Optional: add space between image and text */
-    }
-
-    .project a {
-        text-decoration: none; /* Optional: remove underline */
-        color: inherit; /* Optional: inherit color from parent */
     }
 </style>

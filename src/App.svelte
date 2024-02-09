@@ -21,7 +21,7 @@
 </header>
 
 <main>
-    <svelte:component active={currentRoute} this={page} {params} />
+    <svelte:component active={currentRoute} this={page} />
 </main>
 
 <footer class="container">

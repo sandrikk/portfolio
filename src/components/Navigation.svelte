@@ -1,8 +1,8 @@
 <nav>
     <ul class="menu">
-        <li><a href="">About me</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
