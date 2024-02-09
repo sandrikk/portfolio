@@ -30,12 +30,37 @@
 <section class="container">
     <h2>Portfolio</h2>
 
-    <Project
-            projectName="NEWGROUNDAI"
-            skillsUsed="HTML, CSS, JavaScript, Three.js"
-            previewImage="./src/assets/preview-image1.png"
-    />
-    <Project projectName="Project 2" skillsUsed="React, Redux, Node.js" />
+    <div class="projects-grid">
+        <Project
+                projectName="NEWGROUNDAI"
+                skillsUsed="HTML, CSS, JavaScript, Three.js"
+                previewImage="./src/assets/preview-image1.png"
+                projectLink="https://newgroundai.com/"
+        />
+
+        <Project
+                projectName="NEWGROUNDAI"
+                skillsUsed="HTML, CSS, JavaScript, Three.js"
+                previewImage="./src/assets/preview-image1.png"
+                projectLink="https://newgroundai.com/"
+        />
+
+        <Project
+                projectName="NEWGROUNDAI"
+                skillsUsed="HTML, CSS, JavaScript, Three.js"
+                previewImage="./src/assets/preview-image1.png"
+                projectLink="https://newgroundai.com/"
+        />
+
+        <Project
+                projectName="NEWGROUNDAI"
+                skillsUsed="HTML, CSS, JavaScript, Three.js"
+                previewImage="./src/assets/preview-image1.png"
+                projectLink="https://newgroundai.com/"
+        />
+
+
+    </div>
 </section>
 
 <section class="container">
@@ -71,7 +96,7 @@ section {
 }
 
 .description p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 h2 {
@@ -101,4 +126,9 @@ h2 {
     margin-right: 5px; /* Optional: adjust spacing between image and text */
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    grid-gap: 20px;
+}
 </style>
