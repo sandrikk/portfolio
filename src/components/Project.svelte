@@ -12,7 +12,6 @@
     <a href="{projectLink}">
         <img src="{previewImage}" alt="{projectName}">
         <h3>{projectName}</h3>
-        <p>Type: {type}</p>
         <p>Date: {date}</p>
         <p>Skills Used: {skillsUsed}</p>
     </a>

@@ -1,28 +1,29 @@
 <!-- ProjectsSection.svelte -->
 <script>
-    import { onMount } from 'svelte';
     import Project from "./Project.svelte";
-
     export let projects = [];
     let filteredProjects = projects;
     let filterType = null;
 
     function filterProjects(type) {
         filterType = type;
+        // Filter projects based on the selected type
+        filteredProjects = type ? projects.filter(project => project.type === type) : projects;
     }
-
-    // Update filteredProjects when projects or filterType changes
-    $: filteredProjects = filterType === null ? projects : projects.filter(project => project.type === filterType);
 </script>
 
 <section class="container">
     <h2>Portfolio</h2>
 
     <div class="filter-links">
-        <button on:click={() => filterProjects(null)}>All</button>
-        <button on:click={() => filterProjects("web")}>Web</button>
-        <button on:click={() => filterProjects("apps")}>Apps</button>
-        <button on:click={() => filterProjects("art")}>Art</button>
+        <!-- Bind class to each button based on whether it's selected or not -->
+        <button class:selected={filterType === null} on:click={() => filterProjects(null)}>All</button>
+        <span class="separator">/</span>
+        <button class:selected={filterType === 'web'} on:click={() => filterProjects('web')}>Web</button>
+        <span class="separator">/</span>
+        <button class:selected={filterType === 'apps'} on:click={() => filterProjects('apps')}>Apps</button>
+        <span class="separator">/</span>
+        <button class:selected={filterType === 'art'} on:click={() => filterProjects('art')}>Art</button>
     </div>
 
     <section class="projects-grid">
@@ -52,12 +53,24 @@
 
     .filter-links {
         text-align: center;
-        color: white;
         margin-bottom: 20px;
     }
 
+    .separator {
+        margin: 0 5px;
+    }
+
     .filter-links button {
-        margin-right: 10px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    /* Define the selected class to change the color */
+    .selected {
+        color: var(--cl-button);
     }
 
     .projects-grid {

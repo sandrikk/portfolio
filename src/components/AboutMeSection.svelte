@@ -22,7 +22,7 @@
 <style>
     .about-me {
     background-color: var(--bg-secondary);
-    color: var(--cl-button);
+    color: white;
 }
 
     .description {
