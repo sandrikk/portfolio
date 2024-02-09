@@ -1,21 +1,18 @@
 <!-- ProjectsSection.svelte -->
 <script>
-    import { writable } from 'svelte/store';
+    import { onMount } from 'svelte';
     import Project from "./Project.svelte";
 
     export let projects = [];
-    console.log(projects)
-
-    let filteredProjects = writable(projects);
-    let filterType = writable(null);
+    let filteredProjects = projects;
+    let filterType = null;
 
     function filterProjects(type) {
-        filterType.set(type);
+        filterType = type;
     }
 
-    $: $filteredProjects = $filteredProjects.map(project => {
-        return projects.filter(p => p.type === $filterType);
-    });
+    // Update filteredProjects when projects or filterType changes
+    $: filteredProjects = filterType === null ? projects : projects.filter(project => project.type === filterType);
 </script>
 
 <section class="container">
@@ -28,18 +25,17 @@
         <button on:click={() => filterProjects("art")}>Art</button>
     </div>
 
-    <div class="projects-grid">
-        {#each $filteredProjects as project}
+    <section class="projects-grid">
+        {#each filteredProjects as project}
             <Project
                     projectName={project.projectName}
-                    type={project.type}
                     date={project.date}
                     skillsUsed={project.skillsUsed}
                     previewImage={project.previewImage}
                     projectLink={project.projectLink}
             />
         {/each}
-    </div>
+    </section>
 </section>
 
 <style>
@@ -56,8 +52,8 @@
 
     .filter-links {
         text-align: center;
-        margin-bottom: 20px;
         color: white;
+        margin-bottom: 20px;
     }
 
     .filter-links button {
