@@ -12,3 +12,10 @@
     <p>Processing</p>
 
 </section>
+
+<style>
+    section.container {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+</style>
