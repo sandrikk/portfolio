@@ -45,4 +45,11 @@
     .centered a img {
         margin-right: 5px; /* Optional: adjust spacing between image and text */
     }
+
+    @media screen and (max-width: 1050px) {
+        .arrow {
+            right: 0;
+        }
+    }
+
 </style>
