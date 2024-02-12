@@ -94,12 +94,12 @@
 
         .text-container {
             margin-left: 0; /* Remove margin for smaller screens */
-            height: 10vh;
+            height: 13vh;
         }
 
         img {
             max-width: 100%; /* Take full width on smaller screens */
-            height: 83vh;
+            height: 80vh;
         }
     }
 
