@@ -7,11 +7,16 @@
     import CVSection from "../components/CVSection.svelte";
     import AboutMeSection from "../components/AboutMeSection.svelte";
 
+    import image1 from '../assets/preview-image1.png'
+    import image2 from '../assets/preview-image2.png'
+    import image3 from '../assets/preview-image3.png'
+    import image4 from '../assets/preview-image4.png'
+
     let projects = [
-        { projectName: "NEWGROUNDAI", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: "./src/assets/preview-image1.png", projectLink: "https://newgroundai.com/", type: "web" },
-        { projectName: "RareReads", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: "./src/assets/preview-image2.png", projectLink: "https://newgroundai.com/", type: "web" },
-        { projectName: "SoundSculptor", date: 2023, skillsUsed: "HTML, CSS, JavaScript, SQLite", previewImage: "./src/assets/preview-image3.png", projectLink: "https://newgroundai.com/", type: "web" },
-        { projectName: "TrackManager", date: 2023, skillsUsed: "Java", previewImage: "./src/assets/preview-image4.png", projectLink: "https://github.com/sandrikk/TrackManagerApp", type: "apps" },
+        { projectName: "NEWGROUNDAI", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: image1, projectLink: "https://newgroundai.com/", type: "web" },
+        { projectName: "RareReads", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: image2, projectLink: "https://newgroundai.com/", type: "web" },
+        { projectName: "SoundSculptor", date: 2023, skillsUsed: "HTML, CSS, JavaScript, SQLite", previewImage: image3, projectLink: "https://newgroundai.com/", type: "web" },
+        { projectName: "TrackManager", date: 2023, skillsUsed: "Java", previewImage: image4, projectLink: "https://github.com/sandrikk/TrackManagerApp", type: "apps" },
     ];
 </script>
 

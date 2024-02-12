@@ -1,11 +1,16 @@
+<script>
+    import download from '../assets/downloading.png'
+    import arrow from '../assets/arrow.png'
+</script>
+
 <section class="cv">
     <h2>CV</h2>
 
-    <img class="arrow" src="./src/assets/arrow.png" alt="arrow">
+    <img class="arrow" src={arrow} alt="arrow">
 
     <div class="centered">
-        <a href="./src/assets/SandraKrevovaCV.pdf" download>
-            <img src="./src/assets/downloading.png" alt="download-icon">
+        <a href="/assets/SandraKrevovaCV.pdf" download>
+            <img src={download} alt="download-icon">
             <span>Download my CV</span>
         </a>
     </div>

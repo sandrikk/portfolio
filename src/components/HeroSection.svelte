@@ -1,12 +1,6 @@
-<div class="hero-section">
-    <div class="text-container">
-        <h1>Hi, I'm Sandra!</h1>
-        <h2>{currentText}</h2>
-    </div>
-    <img src="./src/assets/illustration-medium-gradient-ellipse.png" alt="illustration">
-</div>
 
 <script>
+    import illustration from '../assets/illustration-medium-gradient-ellipse.png'
     import Typewriter from "./Typewriter.svelte";
     import { onMount } from 'svelte';
 
@@ -43,6 +37,16 @@
         }
     }
 </script>
+
+<div class="hero-section">
+    <div class="text-container">
+        <h1>Hi, I'm Sandra!</h1>
+        <h2>{currentText}</h2>
+    </div>
+    <img src={illustration} alt="illustration">
+</div>
+
+
 
 <style>
     .hero-section {

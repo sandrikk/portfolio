@@ -1,19 +1,7 @@
 <script>
-    import router from 'page';
     import Header from "./components/Header.svelte";
     import Footer from "./components/Footer.svelte";
     import Home from "./pages/Home.svelte";
-
-    let page;
-    let params;
-    let currentRoute;
-
-    router('/', (ctx) => {
-        page = Home;
-        currentRoute = ctx.pathname;
-    });
-
-    router.start();
 </script>
 
 <header class="container">
@@ -21,7 +9,7 @@
 </header>
 
 <main>
-    <svelte:component active={currentRoute} this={page} />
+    <Home />
 </main>
 
 <footer class="container">
