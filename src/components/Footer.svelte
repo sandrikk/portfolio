@@ -15,7 +15,7 @@
         <a href="https://linkedin.com/in/sandra-krevova" class="link"><img src={linkedin} alt="linkedin-icon"></a>
     </li>
 </ul>
-<p>© Sandra Krevova, 2023</p>
+<p>© Sandra Krevová, 2024</p>
 
 <style>
     .socials {
@@ -36,8 +36,5 @@
     p {
         text-align: center;
     }
-
-
-
 
 </style>

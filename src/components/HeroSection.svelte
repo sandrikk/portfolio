@@ -110,7 +110,11 @@
 
     @media screen and (max-width: 500px) {
         img {
-            font-size: 70vh;
+            height: 70vh;
+        }
+
+        .text-container h2 {
+            font-size: 1.2em;
         }
     }
 </style>

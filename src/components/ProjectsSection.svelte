@@ -7,7 +7,6 @@
 
     function filterProjects(type) {
         filterType = type;
-        // Filter projects based on the selected type
         filteredProjects = type ? projects.filter(project => project.type === type) : projects;
     }
 </script>
@@ -16,7 +15,6 @@
     <h2>Portfolio</h2>
 
     <div class="filter-links">
-        <!-- Bind class to each button based on whether it's selected or not -->
         <button class:selected={filterType === null} on:click={() => filterProjects(null)}>All</button>
         <span class="separator">/</span>
         <button class:selected={filterType === 'web'} on:click={() => filterProjects('web')}>Web</button>
@@ -68,14 +66,13 @@
         font-size: 16px;
     }
 
-    /* Define the selected class to change the color */
     .selected {
         color: var(--cl-button);
     }
 
     .projects {
-        display: flex; /* Change to flexbox */
-        flex-wrap: wrap; /* Allow projects to wrap to the next row */
+        display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
         gap: 1.5rem;
     }

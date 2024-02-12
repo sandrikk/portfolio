@@ -18,16 +18,16 @@
 
 <style>
     .cv {
-        position: relative; /* Make the section a positioned parent */
+        position: relative;
         background-color: var(--cl-button);
         color: var(--bg-primary);
-        //padding-top: 50px; /* Adjust top padding to make space for the arrow */
+        //padding-top: 50px;
     }
 
     .arrow {
-        position: absolute; /* Position the arrow image */
-        top: -2.5rem; /* Align the arrow to the top of the section */
-        right: 15vw; /* Align the arrow to the right with a distance of 10vw */
+        position: absolute;
+        top: -2.5rem;
+        right: 15vw;
     }
 
     .centered {
@@ -39,11 +39,11 @@
     .centered a {
         display: flex;
         align-items: center;
-        text-decoration: none; /* Optional: remove underline */
+        text-decoration: none;
     }
 
     .centered a img {
-        margin-right: 5px; /* Optional: adjust spacing between image and text */
+        margin-right: 5px;
     }
 
     @media screen and (max-width: 500px) {
