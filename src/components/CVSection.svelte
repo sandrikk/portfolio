@@ -9,7 +9,7 @@
     <img class="arrow" src={arrow} alt="arrow">
 
     <div class="centered">
-        <a href="/assets/SandraKrevovaCV.pdf" download>
+        <a href="../assets/SandraKrevovaCV.pdf" download>
             <img src={download} alt="download-icon">
             <span>Download my CV</span>
         </a>
