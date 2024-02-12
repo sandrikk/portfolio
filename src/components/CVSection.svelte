@@ -3,7 +3,7 @@
     import arrow from '../assets/arrow.png'
 </script>
 
-<section class="cv">
+<section class="cv" id="contact">
     <h2>CV</h2>
 
     <img class="arrow" src={arrow} alt="arrow">

@@ -1,3 +1,18 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+</script>
+
 <nav>
     <ul class="menu">
         <li><a href="#about-me">About me</a></li>

@@ -12,7 +12,7 @@
     }
 </script>
 
-<section class="container">
+<section class="container" id="portfolio">
     <h2>Portfolio</h2>
 
     <div class="filter-links">
