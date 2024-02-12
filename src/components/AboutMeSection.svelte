@@ -33,4 +33,16 @@
     .description p {
     font-size: 1.2em;
 }
+
+    @media screen and (max-width: 1050px) {
+        .description {
+            max-width: 60vw;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .description {
+            max-width: 90vw;
+        }
+    }
 </style>

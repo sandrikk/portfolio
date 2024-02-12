@@ -18,7 +18,9 @@
 </div>
 
 <style>
+    /* Additional CSS for projects */
     .project {
+        width: 300px; /* Fixed width for each project */
         margin-bottom: 20px;
         padding: 20px;
         border: 1px solid #ccc;

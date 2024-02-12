@@ -26,7 +26,7 @@
         <button class:selected={filterType === 'art'} on:click={() => filterProjects('art')}>Art</button>
     </div>
 
-    <section class="projects-grid">
+    <div class="projects">
         {#each filteredProjects as project}
             <Project
                     projectName={project.projectName}
@@ -36,7 +36,7 @@
                     projectLink={project.projectLink}
             />
         {/each}
-    </section>
+    </div>
 </section>
 
 <style>
@@ -73,9 +73,10 @@
         color: var(--cl-button);
     }
 
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-        grid-gap: 20px;
+    .projects {
+        display: flex; /* Change to flexbox */
+        flex-wrap: wrap; /* Allow projects to wrap to the next row */
+        justify-content: flex-start;
+        gap: 1.5rem;
     }
 </style>

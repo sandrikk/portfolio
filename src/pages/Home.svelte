@@ -9,8 +9,9 @@
 
     let projects = [
         { projectName: "NEWGROUNDAI", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: "./src/assets/preview-image1.png", projectLink: "https://newgroundai.com/", type: "web" },
-        { projectName: "RareReads", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: "./src/assets/preview-image2.png", projectLink: "https://newgroundai.com/", type: "apps" },
-        { projectName: "SoundSculptor", date: 2023, skillsUsed: "HTML, CSS, JavaScript, SQLite", previewImage: "./src/assets/preview-image3.png", projectLink: "https://newgroundai.com/", type: "art" },
+        { projectName: "RareReads", date: 2023, skillsUsed: "HTML, CSS, JavaScript, Three.js", previewImage: "./src/assets/preview-image2.png", projectLink: "https://newgroundai.com/", type: "web" },
+        { projectName: "SoundSculptor", date: 2023, skillsUsed: "HTML, CSS, JavaScript, SQLite", previewImage: "./src/assets/preview-image3.png", projectLink: "https://newgroundai.com/", type: "web" },
+        { projectName: "TrackManager", date: 2023, skillsUsed: "Java", previewImage: "./src/assets/preview-image4.png", projectLink: "https://github.com/sandrikk/TrackManagerApp", type: "apps" },
     ];
 </script>
 
