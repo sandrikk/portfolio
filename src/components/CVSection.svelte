@@ -46,9 +46,14 @@
         margin-right: 5px; /* Optional: adjust spacing between image and text */
     }
 
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 500px) {
         .arrow {
             right: 0;
+        }
+
+        .centered {
+            justify-content: flex-start;
+            margin-left: 2rem;
         }
     }
 
