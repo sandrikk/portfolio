@@ -1,7 +1,6 @@
 
 <script>
     import illustration from '../assets/illustration-medium-gradient-ellipse.png'
-    import Typewriter from "./Typewriter.svelte";
     import { onMount } from 'svelte';
 
     let currentIndex = 0;
