@@ -108,4 +108,10 @@
             font-size: 3em;
         }
     }
+
+    @media screen and (max-width: 500px) {
+        img {
+            font-size: 70vh;
+        }
+    }
 </style>
