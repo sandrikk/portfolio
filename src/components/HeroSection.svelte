@@ -16,7 +16,7 @@
 
     function startTextAnimation() {
         if (currentIndex >= dataText.length) {
-            currentIndex = 0; // Loop back to the beginning
+            currentIndex = 0; 
         }
 
         const text = dataText[currentIndex];
@@ -55,7 +55,7 @@
     }
 
     .text-container {
-        margin-left: 20vw; /* Initial margin for larger screens */
+        margin-left: 20vw; 
     }
 
     img {
@@ -70,10 +70,10 @@
 
     h2 {
         display: inline-block;
-        border-right: 2px solid var(--bg-secondary); /* Typewriter cursor */
-        white-space: nowrap; /* Prevent text from wrapping */
-        overflow: hidden; /* Hide overflowed text */
-        animation: typing 1s steps(40, end); /* Typing animation */
+        border-right: 2px solid var(--bg-secondary); 
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 1s steps(40, end);
         color: var(--cl-button);
     }
 
@@ -83,21 +83,21 @@
         }
     }
 
-    /* Media query for smaller screens */
+   
     @media screen and (max-width: 1450px) {
         .hero-section {
-            flex-direction: column; /* Stack items vertically on smaller screens */
-            text-align: center; /* Center align text */
+            flex-direction: column; 
+            text-align: center; 
             gap: 0;
         }
 
         .text-container {
-            margin-left: 0; /* Remove margin for smaller screens */
+            margin-left: 0;
             height: 13vh;
         }
 
         img {
-            max-width: 100%; /* Take full width on smaller screens */
+            max-width: 100%; 
             height: 80vh;
         }
     }

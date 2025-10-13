@@ -30,5 +30,3 @@
 <ProjectsSection {projects} />
 
 <SkillsSection />
-
-<CVSection />
