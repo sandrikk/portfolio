@@ -3,13 +3,9 @@
     <div class="description">
         
         <p>
-            I'm a 4th year ICT student at Saxion, deeply engaged in the world of web development. My passion for IT took root in Slovakia during my early years, where it blossomed into an academic journey now unfolding in the Netherlands.
-
+          I’m a 4th year Software Engineering student at Saxion University of Applied Sciences. What began as a passion for technology in my early years in Slovakia has evolved into an academic journey in the Netherlands. I enjoy working on full-stack projects and am fascinated by DevOps and cloud technologies.
         </p>
-        <p>
-            Alongside my studies, I am fascinated by the power of AI, dedicating my spare time to understanding its impact on our everyday lives and future possibilities. I also have a keen interest in generative art, where technology meets creativity.
-
-        </p> 
+       
     </div>
 
 </section>
