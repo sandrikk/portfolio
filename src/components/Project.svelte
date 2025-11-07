@@ -1,11 +1,9 @@
-<!-- Project.svelte -->
 <script>
     export let projectName;
     export let date;
     export let skillsUsed;
     export let previewImage;
     export let projectLink;
-    export let type;
 </script>
 
 <div class="project">
@@ -18,9 +16,9 @@
 </div>
 
 <style>
-    /* Additional CSS for projects */
+  
     .project {
-        width: 300px; /* Fixed width for each project */
+        width: 300px;
         margin-bottom: 20px;
         padding: 20px;
         border: 1px solid #ccc;
@@ -30,6 +28,6 @@
     .project img {
         width: 100%;
         height: 12rem;
-        margin-bottom: 10px; /* Optional: add space between image and text */
+        margin-bottom: 10px; 
     }
 </style>
